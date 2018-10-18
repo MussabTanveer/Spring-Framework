@@ -11,11 +11,19 @@ public class BinarySearchImpl {
 	@Autowired
 	private SortAlgo sortAlgo;
 	
-	// below is the loosely coupled code
+	
+	/*
+	// below is the loosely coupled code - Constructor Injection
 	public BinarySearchImpl(SortAlgo sortAlgo) {
 		super();
 		this.sortAlgo = sortAlgo;
+	}*/
+	
+	// setter injection
+	public void setSortAlgo(SortAlgo sortAlgo) {
+		this.sortAlgo = sortAlgo;
 	}
+
 
 	public int binarySearch(int[] numbers, int numberToSearchFor){
 		// Sorting an array
