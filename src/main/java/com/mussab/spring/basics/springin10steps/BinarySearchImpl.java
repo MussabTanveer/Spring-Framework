@@ -19,10 +19,11 @@ public class BinarySearchImpl {
 		this.sortAlgo = sortAlgo;
 	}*/
 	
+	/*
 	// setter injection
 	public void setSortAlgo(SortAlgo sortAlgo) {
 		this.sortAlgo = sortAlgo;
-	}
+	}*/
 
 
 	public int binarySearch(int[] numbers, int numberToSearchFor){
