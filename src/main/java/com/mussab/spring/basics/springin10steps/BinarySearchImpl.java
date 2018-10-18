@@ -1,7 +1,14 @@
 package com.mussab.spring.basics.springin10steps;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+// Bean
+@Component
 public class BinarySearchImpl {
 	
+	// Dependency
+	@Autowired
 	private SortAlgo sortAlgo;
 	
 	// below is the loosely coupled code
